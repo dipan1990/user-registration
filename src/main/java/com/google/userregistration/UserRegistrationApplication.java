@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EnableJpaRepositories({"com.google.userregistration"})
+@EnableJpaRepositories({"com.google.userregistration.*"})
 @SpringBootApplication
 @EnableEurekaClient
 public class UserRegistrationApplication {

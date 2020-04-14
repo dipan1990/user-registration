@@ -89,7 +89,7 @@ public class UserController {
 	 */
 	@ResponseBody
 	// As it consumes JSON
-	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(method = RequestMethod.POST, value=URI.CREATE,consumes = MediaType.APPLICATION_JSON_UTF8_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	// We are using user object from RequestBody so use @RequestBody
 	public ResponseEntity<?> create(@RequestBody User user) {
 		return service.create(user);
